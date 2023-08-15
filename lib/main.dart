@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,6 +37,13 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5,
                     fontWeight: FontWeight.bold,
                   ),),
+                SizedBox(
+                  height: 15,
+                  width: 150,
+                  child: Divider(
+                    color: Colors.teal[900],
+                  ),
+                ),
                 Card(
                   color: Colors.white,
                   margin: EdgeInsetsDirectional.symmetric(horizontal: 25.0,vertical: 10.0),
@@ -60,6 +68,19 @@ class MyApp extends StatelessWidget {
                             color: Colors.teal[900]),),
                     ),
                   ),
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsetsDirectional.symmetric(horizontal: 25.0,vertical: 10.0),
+                  child: ListTile(
+                    leading: FaIcon(FontAwesomeIcons.instagram,
+                      color: Colors.deepPurple,
+                    ),
+                    title: Text("hemanth_sharath",
+                      style: TextStyle(
+                          fontFamily: "Source Sans Serif",
+                          color: Colors.teal[900]),),
+                  ),
+                ),
               ],
             )
         ),
