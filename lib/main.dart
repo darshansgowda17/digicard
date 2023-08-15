@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CircleAvatar(
                   radius: 50.0,
@@ -38,35 +39,27 @@ class MyApp extends StatelessWidget {
                 Card(
                   color: Colors.white,
                   margin: EdgeInsetsDirectional.symmetric(horizontal: 25.0,vertical: 10.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Icon(Icons.phone,
-                        color: Colors.teal,),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        Text("+91-7204497763",
-                        style: TextStyle(
+                  child: ListTile(
+                    leading: Icon(Icons.phone,
+                      color: Colors.teal,),
+                    title: Text("+91-7204497763",
+                      style: TextStyle(
                           fontFamily: "Source Sans Serif",
-                            color: Colors.teal[900]),),
-                      ],
+                          color: Colors.teal[900]),),
+                         ),
                     ),
-                  ),
-                ),
                 Card(
                   color: Colors.white,
                   margin: EdgeInsetsDirectional.symmetric(horizontal: 25.0,vertical: 10.0),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ListTile(
+                  child: ListTile(
                       leading: Icon(Icons.email,
-                        color: Colors.teal) ,
+                        color: Colors.teal),
+                      title: Text("hemanthsharath@gmail.com",
+                        style: TextStyle(
+                            fontFamily: "Source Sans Serif",
+                            color: Colors.teal[900]),),
                     ),
                   ),
-                ),
-
               ],
             )
         ),
@@ -75,17 +68,5 @@ class MyApp extends StatelessWidget {
   }
 }
 
-Row(
-children: [
-Icon(Icons.email,
-color: Colors.teal,),
-SizedBox(
-width: 10.0,
-),
-Text("hemanthsharath@gmail.com",
-style: TextStyle(
-fontFamily: "Source Sans Serif",
-color: Colors.teal[900]),),
-],
-),
+
 
