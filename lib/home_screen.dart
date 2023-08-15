@@ -79,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                           child: QrImageView(
                             data: "https://instagram.com/hemanth_sharath?igshid=MzRlODBiNWFlZA==",
                             version: QrVersions.auto,
-                            size: 100.0,),
+                            size: 120.0,),
                         )
                       ),
                     ),
